@@ -95,6 +95,7 @@
 <!--              识别card-->
               <el-col :span="14">
                 <el-card class="box-card" style="background-color:#f2f5fa;">
+<!--                <el-card class="box-card" style="background-image: url('../../static/images/manchu.jpg');background-size:cover; ">-->
                   <div class="container" style="height:360px;">
                     <h1 class="title">满文识别系统</h1>
                     <el-upload style="margin:50px auto 0; text-align: center;"
@@ -102,9 +103,9 @@
                                :show-file-list="false" :multiple="false"
                                action="">
                       <img :src="imgDataBase64" v-if="imgDataBase64!==''" style="width: 100%;height: 100%;"/>
-                      <div v-else>
+                      <div v-else class="upload-center">
                         <i class="el-icon-upload"></i>
-                        <div class="el-upload__text">将图片拖到此处，或<em>点击上传</em></div>
+                        <div class="el-upload__text" style="opacity: 1;">将图片拖到此处，或<em>点击上传</em></div>
                         <div class="el-upload__tip" slot="tip">只能上传jpg/png图片文件，且不超过5MB</div>
                       </div>
                     </el-upload>
@@ -220,6 +221,12 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.upload-center{
+  width:100%;
+  height:100%;
+  background-image: url('../../static/images/manchu_alpha_80.png');
+  background-size:cover;
+}
 .btn-user {
   position: absolute;
   right: 10px;
