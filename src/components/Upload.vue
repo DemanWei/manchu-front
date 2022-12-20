@@ -96,7 +96,7 @@
               <el-col :span="14">
                 <el-card class="box-card" style="background-color:#f2f5fa;">
 <!--                <el-card class="box-card" style="background-image: url('../../static/images/manchu.jpg');background-size:cover; ">-->
-                  <div class="container" style="height:360px;">
+                  <div class="container" style="height:360px;">，
                     <h1 class="title">满文识别系统</h1>
                     <el-upload style="margin:50px auto 0; text-align: center;"
                                class="upload-demo" drag :on-progress="handleProgressPicture"
